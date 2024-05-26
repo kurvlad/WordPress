@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="./src/index.js"></script>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <div class="header-inner navbar row">
+                <ul class="nav nav-pills col-5">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdownMenuClickableInside" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside" aria-expanded="false">Уроки</a>
+                        <div class="dropdown-menu  dropdown-width " aria-labelledby="dropdownMenuClickableInside">
+                            <div class="row dropdown-row">
+                                <ul class="col-3 ">
+                                    <h4 class="dropdown-item-title">Продолжительность</h4>
+                                    <li class="dropdown-item dropdown-item-text ">
+                                        <input class="form-check-input" type="checkbox" value="" id="contin1">
+                                        <label class="form-check-label" for="contin1">
+                                            &lt 15 Минут
+                                        </label>
+                                    </li>
+
+                                    <li class="dropdown-item dropdown-item-text">
+                                        <input class="form-check-input" type="checkbox" value="" id="contin2">
+                                        <label class="form-check-label" for="contin2">
+                                            15-30 Минут
+                                        </label>
+                                    </li>
+
+                                    <li class="dropdown-item dropdown-item-text">
+                                        <input class="form-check-input" type="checkbox" value="" id="contin3">
+                                        <label class="form-check-label" for="contin3">
+                                            30-45 Минут
+                                        </label>
+                                    </li>
+
+                                    <li class="dropdown-item dropdown-item-text">
+                                        <input class="form-check-input" type="checkbox" value="" id="contin4">
+                                        <label class="form-check-label" for="contin4">
+                                            &gt 60 Минут
+                                        </label>
+                                    </li>
+
+                                </ul>
+                                <ul class="col-3">
+                                    <h4 class="dropdown-item-title">Уровень сложности</h4>
+                                    <li class=" dropdown-item dropdown-item-text"><a class="nav-link list-link"
+                                            href="./lesson.html">Новичок</a></li>
+                                    <li class="dropdown-item dropdown-item-text"><a class="nav-link list-link"
+                                            href="./lesson.html">Начинающий</a></li>
+                                    <li class="dropdown-item dropdown-item-text"><a class="nav-link list-link"
+                                            href="./lesson.html">Средний</a></li>
+                                    <li class="dropdown-item dropdown-item-text"><a class="nav-link list-link"
+                                            href="./lesson.html">Сложный</a></li>
+                                </ul>
+                                <ul class="col-2">
+                                    <h4 class="dropdown-item-title">Тип йоги</h4>
+                                    <li class="dropdown-item dropdown-item-text"><a class="nav-link list-link"
+                                            href="./lesson.html">Хатха</a></li>
+                                    <li class="dropdown-item dropdown-item-text"><a class="nav-link list-link"
+                                            href="./lesson.html">Виньяса</a></li>
+                                    <li class="dropdown-item dropdown-item-text"><a class="nav-link list-link"
+                                            href="./lesson.html">Кундалини</a></li>
+                                    <li class="dropdown-item dropdown-item-text"><a class="nav-link list-link"
+                                            href="./lesson.html">Медитация</a></li>
+                                </ul>
+                                <ul class="col-4">
+                                    <h4 class="dropdown-item-title">Новое видео</h4>
+                                    <div class="new-video ">
+                                        <button class="nav-link "><img class="video-btn" src="./img/play.png"
+                                                alt=""></button>
+                                        <p class="video-text video-name">Кундалини</p>
+                                        <p class="video-text video-time">20 мин</p>
+
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./trainer.html">Инструкторы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tariff.html">Тарифы</a>
+                    </li>
+
+                </ul>
+
+
+                <a href="./index.html" class="col-2 logo">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+
+                <ul class="nav nav-pills col-5 nav-right">
+                    <li class="nav-item nav-item-right ">
+                        <input type="text" name="" id="" placeholder="Поиск" class="form-control input-search">
+                        <button class="btn btn-header  header-search"></button>
+                    </li>
+
+                    <li class="nav-item nav-item-right">
+                        <a class="nav-link" href="#">Личный кабинет</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+
+        <section class="video-page">
+            <div class="container">
+                <h1 class="video-title">Знакомство с йогой</h1>
+                <div class="video-content">
+                    <div class="video-block">
+                        <video controls class="video-file" id="video">
+                            <source type="video/mp4" src="./video/video-dropdown.mp4">
+                        </video>
+                        <ul class="video-sub">
+                            <li class="video-descr-item">Инструктор: Резеда Анамова</li>
+                            <li class="video-descr-item">Уровень: Начинающий</li>
+                            <li class="video-descr-item">Тип йоги: Хатха</li>
+                        </ul>
+                    </div>
+
+                    <div class="video-descr">
+                        <h3 class="video-title-p"> Описание</h3>
+                        <p class="video-p">Доказано, что йога так и работает. Эта эффективная и веками проверенная
+                            практика
+                            воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека).
+                            Тот,
+                            кто занимается йогой, становится здоровее и выносливее, после занятий чувствует прилив сил,
+                            а
+                            также с новой силой может ощутить вкус к жизни.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-containe">
+                <div class="footer-left">
+                    <div class="footer-left-top">
+                        <div class="footer-link">
+                            <a href="" class="nav-link foot-link">Обратная связь</a>
+                            <a href="" class="nav-link foot-link">Условия пользования</a>
+                        </div>
+                        <p class="footer-descr">© 2020 aiogi. Все права защищены</p>
+                    </div>
+                    <div class="footer-left-bottom">
+                        <a href="" class="footer-social footer-social-1">
+                            <img src="./img/footer-1.png" alt="">
+                        </a>
+                        <a href="" class="footer-social footer-social-2"><img src="./img/footer-2.png" alt=""></a>
+                        <a href="" class="footer-social footer-social-3"><img src="./img/footer-3.png" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <h3 class="footer-title">Подписаться на рассылку</h3>
+                    <p class="footer-text">Будь в курсе самых последний обновлений</p>
+                    <form action="">
+                        <input type="text" name="" id="" class="footer-input" placeholder="Email">
+                        <button class="button btn-primary button-footer">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
